@@ -13,7 +13,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -89,7 +89,6 @@ sub tick {
          my $v = $self->{queue}->{$time};
          delete $self->{queue}->{$time};
          foreach my $event (@$v) {
-            print "Executing.\n";
             &$event();  # It's a closure!
          }
       }

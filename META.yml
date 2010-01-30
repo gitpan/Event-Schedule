@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Event-Schedule
-version:            0.01
+version:            0.02
 abstract:           A simple way to organize timed events in, say, an IRC bot.
 author:
     - Michael Roberts <michael@vivtek.com>
